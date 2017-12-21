@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BirthdayWisher</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">This App is designed to Send Birthday Sms at a desired time. App can also be used to send sms other than birthday sms.\n
+    Similarly App has features turning on/off sms,notification and sound.\n\nFor detail go to:\nyogeshgautam.com.np
+    </string>
+
+    <string name="developers">Developers\n Ajesh Sen Thapa\nBiraj Subedi\nDiwas poudel\nYogesh Gautam\n\nFor detail go to:\nyogeshgautam.com.np
+    </string>
+
+
+    <string name="facebook_app_id">495491707503494</string>
+    <string name="fb_login_protocol_scheme">fb495491707503494</string>
+
+
+</resources>

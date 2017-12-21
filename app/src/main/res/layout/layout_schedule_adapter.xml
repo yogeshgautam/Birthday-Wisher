@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name:"
+        android:id="@+id/mytext"
+        android:textColor="@color/textColor"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1dp"
+        android:layout_alignParentTop="true"
+        android:width="60dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:id="@+id/name_adapter"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/mytext"
+
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/mytext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phone:"
+        android:id="@+id/textView25"
+        android:width="60dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/mytext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"        android:text="Large Text"
+        android:id="@+id/phone_adapter"
+
+        android:layout_marginTop="0dp"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignLeft="@+id/name_adapter"
+        android:layout_alignStart="@+id/name_adapter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:layout_marginTop="0dp"
+        android:id="@+id/dob_adapter"
+        android:gravity="center"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/phone_adapter"
+        android:layout_alignEnd="@+id/phone_adapter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/time_adapter"
+        android:layout_alignTop="@+id/dob_adapter"
+        android:layout_toRightOf="@+id/dob_adapter"
+        android:gravity="right"
+        android:textColor="@color/timer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

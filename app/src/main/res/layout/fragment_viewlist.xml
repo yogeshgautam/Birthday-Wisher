@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    tools:context=".basic_view_manager.viewlist">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/relayout"><![CDATA[
+
+
+
+        TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            TextView style="@style/CodeFont"
+            android:id="@+id/viewall"
+            android:layout_below="@+id/button_member" />
+
+
+
+
+
+
+        ]]></LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+
+
+
+        android:layout_height="match_parent"
+        android:id="@+id/listView" />
+
+</FrameLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name:"
+                android:id="@+id/textView16"
+                android:textColor="@color/textColor"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/name_layout" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name_layout"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/textView16"
+                android:layout_toRightOf="@+id/textView16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Phone:"
+                android:id="@+id/textView17"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/textView16"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/phone_layout"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_toEndOf="@+id/textView17" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Birthday SMS"
+                android:id="@+id/checkBox_layout"
+                android:layout_below="@+id/phone_layout"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/textColor"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date of Birth"
+                android:id="@+id/textView18"
+                android:layout_below="@+id/checkBox_layout"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/textColor"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView18"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Format in BS"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/radioButton_BS_layout"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:text="Format in AD"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/radioButton_AD_layout"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Select Month"
+                android:id="@+id/textView19"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/textColor"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:text="Select Day"
+                android:id="@+id/textView20"
+                android:layout_below="@+id/radioGroup"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="40dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="right" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_month_layout"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView19"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textColor"
+
+                android:layout_alignRight="@+id/textView19"
+                android:layout_alignEnd="@+id/textView19" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_day_layout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/textView20"
+                android:textColor="@color/textColor"
+                android:layout_below="@id/textView20"
+                android:layout_alignStart="@+id/textView20" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/save_layout"
+                android:layout_below="@+id/spinner_month_layout"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/button_color"
+                android:background="@drawable/colorbutton"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_toEndOf="@+id/textView17" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="@color/button_color"
+                android:background="@drawable/colorbutton"
+                android:id="@+id/cancel_layout"
+                android:layout_below="@+id/spinner_day_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="54dp"
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="83dp"
+                android:id="@+id/imageButton_layout"
+
+
+                android:layout_toRightOf="@+id/phone_layout"
+                android:layout_toEndOf="@+id/phone_layout"
+                android:layout_alignTop="@+id/phone_layout"
+                android:layout_alignBottom="@+id/phone_layout"
+                android:src="@mipmap/contacts"
+                android:onClick="contactsRead"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
